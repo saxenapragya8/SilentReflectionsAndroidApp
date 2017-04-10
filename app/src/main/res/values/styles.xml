@@ -74,8 +74,19 @@
         <item name="android:textColor">@color/colorBlack38</item>
     </style>
 
-    <style name="FSTE.Caption.Primary">
-        <item name="android:textColor">@color/colorAccent</item>
+    <style name="FSTE.Avatar" parent="@android:style/TextAppearance.Material.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
     </style>
+
+    <style name="FSTE.Avatar.Secondary">
+        <item name="android:textColor">@color/colorBlack38</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
 
 </resources>

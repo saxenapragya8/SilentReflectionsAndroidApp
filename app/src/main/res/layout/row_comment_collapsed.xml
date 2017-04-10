@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/secondary_divider">
+
+    <ImageView
+        android:id="@+id/conversationAvatar"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/primary_row_margin"
+        android:layout_marginTop="@dimen/primary_avatar_text_padding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_read" />
+
+    <TextView
+        android:id="@+id/commentVersionNo"
+        style="@style/FSTE.Avatar.Secondary"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/primary_row_margin"
+        android:layout_marginTop="@dimen/secondary_avatar_text_padding"
+        android:text="v1"
+        android:textAlignment="center"
+        android:typeface="monospace"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/conversationAvatar" />
+
+    <TextView
+        android:id="@+id/commentDate"
+        style="@style/FSTE.Caption.Secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/primary_row_margin"
+        android:layout_marginTop="@dimen/primary_row_margin"
+        android:text="Feb 12"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- TODO change date format: see github web code -->
+
+    <TextView
+        android:id="@+id/commentContent"
+        style="@style/FSTE.Body1.Secondary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/primary_row_margin"
+        android:layout_marginEnd="@dimen/primary_row_margin"
+        android:layout_marginStart="@dimen/primary_row_margin"
+        android:layout_marginTop="@dimen/secondary_text_padding"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/large_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commentDate"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

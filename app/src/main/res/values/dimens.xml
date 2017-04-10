@@ -14,8 +14,8 @@
     <dimen name="primary_button_padding_end">8dp</dimen>
 
     <dimen name="avatar_size">40dp</dimen>
-    <dimen name="primary_avatar_text_padding">3dp</dimen>
-    <dimen name="secondary_avatar_text_padding">1dp</dimen>
+    <dimen name="primary_avatar_text_padding">18dp</dimen>
+    <dimen name="secondary_avatar_text_padding">3dp</dimen>
 
     <dimen name="card_margin_horizontal">8dp</dimen>
     <dimen name="card_margin_vertical">4dp</dimen>
