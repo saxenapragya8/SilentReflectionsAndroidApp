@@ -1,35 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <group android:checkableBehavior="single">
+    <item android:title="@string/menu_life">
+        <menu>
+            <group
+                android:id="@+id/life"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/navSetReminder"
+                    android:icon="@drawable/ic_reminder"
+                    android:title="@string/menu_reminder" />
+
+                <item
+                    android:id="@+id/navDrafts"
+                    android:icon="@drawable/ic_drafts"
+                    android:title="@string/menu_drafts" />
+
+            </group>
+        </menu>
+    </item>
+
+    <group
+        android:id="@+id/invitation"
+        android:checkableBehavior="single">
+
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/navInvite"
+            android:icon="@drawable/ic_invite"
+            android:title="@string/menu_invite" />
     </group>
 
-    <item android:title="Communicate">
+    <group
+        android:id="@+id/settings"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navArchives"
+            android:icon="@drawable/ic_archive"
+            android:title="@string/menu_archive" />
+
+        <item
+            android:id="@+id/navSettings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/menu_settings" />
+
+        <item
+            android:id="@+id/navHelp"
+            android:icon="@drawable/ic_help"
+            android:title="@string/menu_help" />
+    </group>
+
+    <item android:title="Temporary">
         <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+            <group
+                android:id="@+id/temp"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/navAddReflection"
+                    android:icon="@drawable/ic_fab_topic"
+                    android:title="Add Comment" />
+
+                <item
+                    android:id="@+id/navComments"
+                    android:icon="@drawable/ic_drafts"
+                    android:title="Reflection" />
+
+                <item
+                    android:id="@+id/navAddComment"
+                    android:icon="@drawable/ic_fab_comment"
+                    android:title="Add Comment" />
+
+            </group>
         </menu>
     </item>
 
