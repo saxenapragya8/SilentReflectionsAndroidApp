@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/link"
+        android:orderInCategory="1"
+        android:title="@string/menu_link"
+        android:icon="@drawable/ic_menu_link_inactive"
+        app:showAsAction="ifRoom" />
+    <!--TODO: change menu icon to ic_menu_link_active when link address exists-->
+
+    <item
+        android:id="@+id/send"
+        android:orderInCategory="2"
+        android:title="@string/menu_send"
+        android:icon="@drawable/ic_menu_send_active"
+        app:showAsAction="ifRoom" />
+    <!--TODO: change menu icon to ic_menu_send_inactive unless condition satisfied-->
+</menu>

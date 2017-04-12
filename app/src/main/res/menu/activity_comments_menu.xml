@@ -2,8 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:id="@+id/openLink"
+        android:orderInCategory="1"
+        android:title="@string/menu_open_link"
+        android:icon="@drawable/ic_menu_open_link"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/archive"
+        android:orderInCategory="2"
+        android:title="@string/menu_archive"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="3"
+        android:title="@string/menu_share"
         app:showAsAction="never" />
 </menu>

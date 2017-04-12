@@ -14,11 +14,11 @@
         android:layout_marginTop="@dimen/primary_avatar_text_padding"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_read" />
+        app:srcCompat="@drawable/ic_unread" />
 
     <TextView
         android:id="@+id/commentVersionNo"
-        style="@style/FSTE.Avatar.Secondary"
+        style="@style/FSTE.Avatar"
         android:layout_width="@dimen/avatar_size"
         android:layout_height="wrap_content"
         android:layout_marginBottom="0dp"
@@ -38,27 +38,31 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/primary_row_margin"
         android:layout_marginTop="@dimen/primary_row_margin"
-        android:text="Feb 12"
+        android:text="@string/today"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <!-- TODO change date format: see github web code -->
 
-    <TextView
+
+    <EditText
         android:id="@+id/commentContent"
-        style="@style/FSTE.Body1.Secondary"
+        style="@style/FSTE.Body1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/primary_row_margin"
-        android:layout_marginEnd="@dimen/primary_row_margin"
-        android:layout_marginStart="@dimen/primary_row_margin"
-        android:layout_marginTop="@dimen/secondary_text_padding"
-        android:ellipsize="end"
-        android:lines="1"
-        android:text="@string/large_text"
+        android:layout_marginEnd="@dimen/input_row_margin"
+        android:layout_marginStart="@dimen/input_row_margin"
+        android:layout_marginTop="@dimen/input_text_padding"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="top"
+        android:hint="@string/hint_comment"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:paddingBottom="@dimen/primary_row_margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/commentDate"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>

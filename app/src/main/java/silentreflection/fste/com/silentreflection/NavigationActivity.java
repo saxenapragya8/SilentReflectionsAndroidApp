@@ -101,12 +101,20 @@ public class NavigationActivity extends AppCompatActivity
                 startActivity(showSettingsActivity);
                 break;
             case R.id.navHelp:
+
+//          temporary items
             case R.id.navAddReflection:
+                Intent addReflectionActivity = new Intent(this, AddReflectionActivity.class);
+                startActivity(addReflectionActivity);
+                break;
             case R.id.navComments:
                 Intent showCommentsActivity = new Intent(this, CommentsActivity.class);
                 startActivity(showCommentsActivity);
                 break;
             case R.id.navAddComment:
+                Intent addCommentActivity = new Intent(this, AddCommentActivity.class);
+                startActivity(addCommentActivity);
+                break;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

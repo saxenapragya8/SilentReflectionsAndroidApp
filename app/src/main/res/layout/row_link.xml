@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/secondary_divider">
+
+    <ImageView
+        android:id="@+id/iconLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/primary_row_margin"
+        android:layout_marginStart="@dimen/primary_row_margin"
+        android:layout_marginTop="@dimen/primary_row_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_open_link" />
+
+    <EditText
+        android:id="@+id/commentContent"
+        style="@style/FSTE.Body1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/input_row_margin"
+        android:layout_marginStart="@dimen/primary_row_margin"
+        android:layout_marginTop="@dimen/input_topic_padding"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="@string/hint_link"
+        android:inputType="textUri"
+        android:lines="1"
+        android:paddingBottom="@dimen/primary_row_margin"
+        android:selectAllOnFocus="true"
+        app:layout_constraintLeft_toRightOf="@+id/iconLink"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

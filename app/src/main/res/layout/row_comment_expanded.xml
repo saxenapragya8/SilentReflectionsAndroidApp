@@ -7,7 +7,7 @@
     android:background="@drawable/secondary_divider">
 
     <ImageView
-        android:id="@+id/conversationAvatar"
+        android:id="@+id/reflectionAvatar"
         android:layout_width="@dimen/avatar_size"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/primary_row_margin"
@@ -21,13 +21,15 @@
         style="@style/FSTE.Avatar"
         android:layout_width="@dimen/avatar_size"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
         android:layout_marginStart="@dimen/primary_row_margin"
-        android:layout_marginTop="@dimen/secondary_avatar_text_padding"
+        android:layout_marginTop="0dp"
         android:text="v1"
         android:textAlignment="center"
         android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/reflectionAvatar"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/conversationAvatar" />
+        app:layout_constraintTop_toTopOf="@+id/reflectionAvatar" />
 
     <TextView
         android:id="@+id/commentDate"

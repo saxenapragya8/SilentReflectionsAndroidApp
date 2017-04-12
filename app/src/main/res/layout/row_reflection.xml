@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/secondary_divider">
+    android:background="@drawable/primary_divider">
 
     <ImageView
         android:id="@+id/reflectionAvatar"
@@ -14,11 +14,11 @@
         android:layout_marginTop="@dimen/primary_avatar_text_padding"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_read" />
+        app:srcCompat="@drawable/ic_unread" />
 
     <TextView
         android:id="@+id/commentVersionNo"
-        style="@style/FSTE.Avatar.Secondary"
+        style="@style/FSTE.Avatar"
         android:layout_width="@dimen/avatar_size"
         android:layout_height="wrap_content"
         android:layout_marginBottom="0dp"
@@ -44,6 +44,21 @@
     <!-- TODO change date format: see github web code -->
 
     <TextView
+        android:id="@+id/reflectionTopic"
+        style="@style/FSTE.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/primary_row_margin"
+        android:layout_marginStart="@dimen/primary_row_margin"
+        android:layout_marginTop="@dimen/secondary_text_padding"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="Topic of Reflection"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commentDate" />
+
+    <TextView
         android:id="@+id/commentContent"
         style="@style/FSTE.Body1.Secondary"
         android:layout_width="0dp"
@@ -51,14 +66,13 @@
         android:layout_marginBottom="@dimen/primary_row_margin"
         android:layout_marginEnd="@dimen/primary_row_margin"
         android:layout_marginStart="@dimen/primary_row_margin"
-        android:layout_marginTop="@dimen/secondary_text_padding"
+        android:layout_marginTop="@dimen/primary_text_padding"
         android:ellipsize="end"
         android:lines="1"
         android:text="@string/large_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/commentDate"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/reflectionTopic" />
 
 </android.support.constraint.ConstraintLayout>
